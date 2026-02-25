@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Portfolio</title>
+    <style>
+
+        /* GENERAL STYLING */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(to bottom, #1f1c2c, #767192);
+            color: white;
+            line-height: 1.6;
+        }
+
+        section {
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            font-size: 32px;
+        }
+
+        /* NAVIGATION */
+        nav {
+            position: sticky;
+            top: 0;
+            background: #111;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #928dab;
+        }
+
+        /* HOME */
+        #home h1 {
+            font-size: 48px;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        #home p {
+            font-size: 20px;
+            margin-top: 10px;
+        }
+
+        /* ABOUT */
+        #about img {
+            width: 150px;
+            border-radius: 50%;
+            margin-top: 20px;
+        }
+
+        /* PROJECTS */
+        .project-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            color: black;
+            width: 250px;
+            padding: 20px;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        /* SKILLS */
+        /* layout for skills section */
+        #skills {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        #skills > h2 {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        .skill {
+            margin: 15px;
+            width: 250px;
+            text-align: center;
+        }
+
+        .skill-bar {
+            height: 10px;
+            background: #ddd;
+            border-radius: 5px;
+            margin-top: 5px;
+        }
+
+        .skill-level {
+            height: 10px;
+            background: #1f1c2c;
+            border-radius: 5px;
+        }
+
+        /* CONTACT */
+        #contact a {
+            color: white;
+            text-decoration: underline;
+        }
+
+        /* ANIMATION */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 10; }
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- NAVIGATION -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- HOME -->
+    <section id="home">
+        <h1>Love Mellegård Fastén</h1>
+        <p>Student</p>
+        <p>Aspiring Software Developer</p>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            I am a driven student with a passion for technology and problem-solving. I have experience in software development and data analysis, and I am eager to apply my skills in real-world projects.
+        </p>
+        <p>
+            I am motivated by challenges and enjoy working in collaborative environments. I am always looking for opportunities to learn and grow, and I am excited to contribute to innovative projects in the future.
+        </p>
+        <img src="https://via.placeholder.com/150" alt="Profile Image(Placeholder)">
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="project-container">
+            <div class="card">
+                <h3>LIGO Gravitational Wave Data Analysis - Undergraduate Physics Research, St. Thomas University</h3>
+                <p>
+Developed a machine learning model to filter noise from LIGO gravitational wave data, enhancing signal
+clarity
+Analyzed and compared Signal-to-Noise Ratio (SNR) to assess the statistical significance of detected signals
+Utilized Python, SciPy, and Matplotlib for data preprocessing and optimizing filtering techniques
+Performed multi-detector analysis using data from LIGO-Hanford, LIGO-Livingston, and Virgo detectors
+</p>
+            </div>
+            <div class="card">
+                <h3> Nasa Minds - Undergraduate Physics Research, St. Thomas University</h3>
+                <p>
+Engineered a swarm robot system with autonomous navigation for obstacle avoidance and data collection
+Designed and implemented a solar panel angler using photoresistors to optimize positioning, increasing 
+efficiency by up to 15%
+Integrated Arduino, Raspberry Pi, digital servos, solar cells, and a solar charging kit for system automation
+Conducted simulation and real-world testing to validate system performance
+</p>
+            </div>
+            <div class="card">
+                <h3>Software Development Intern - Elvaco AB, Gothenburg, SWE</h3>
+                <p>
+Developed an end-to-end testing framework using Python Pytest Library and GitLab CI/CD pipeline
+Utilized PostgreSQL database to save test results 
+Crafted visual dashboard of database test outcomes over time
+Executed cross-departmental communication on projects
+</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+        <h2>My Skills</h2>
+
+        <div class="skill">
+            <div class="card">
+                <h3>Python</h3>
+            </div>
+        </div>
+
+        <div class="skill">
+            <div class="card">
+                <h3>Java</h3>
+            </div>
+        </div>
+
+        <div class="skill">
+            <div class="card">
+                <h3>SQL</h3>
+            </div>
+        </div>
+
+        <div class="skill">
+            <div class="card">
+                <h3>Problem Solving</h3>
+            </div>
+        </div>
+
+        <div class="skill">
+            <div class="card">
+                <h3>Teamwork</h3>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: lovemf2003@gmail.com</p>
+        <p>LinkedIn: <a href="#">linkedin.com/placeholder</a></p>
+    </section>
+
+</body>
+</html>
